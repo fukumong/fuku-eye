@@ -16,7 +16,11 @@
     "emitDeclarationOnly": true,
     "jsx": "react-jsx",
     "declaration": true,
-    "outDir": "dist/types"
+    "outDir": "dist/types",
+    "baseUrl": "./",
+    "paths": {
+      "src/*": ["src/*"]
+    }
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]
